@@ -257,6 +257,20 @@ Hidráulica (Everton)
 <a class="whatsapp" href="https://wa.me/5511984688870" target="_blank">
 📞
 </a>
+<div id="lightbox" onclick="fecharImagem()">
+<img id="imagemGrande">
+</div>
 
+<script>
+function abrirImagem(src){
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("imagemGrande").src=src;
+}
+
+function fecharImagem(){
+document.getElementById("lightbox").style.display="none";
+}
+</script> 
+  
 </body>
 </html>
