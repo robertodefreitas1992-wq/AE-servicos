@@ -1,197 +1,369 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Eletricista e Encanador 24h em São Paulo | AE Serviços</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eletricista e Encanador 24 horas em São Paulo. Instalações elétricas, troca de disjuntores, vazamentos, desentupimentos e manutenção hidráulica. Atendimento rápido em toda São Paulo.">
-    <meta name="keywords" content="eletricista são paulo, encanador são paulo, eletricista 24 horas, vazamento hidráulico, troca de disjuntor, manutenção elétrica, desentupimento">
-    <meta name="author" content="AE Serviços Hidráulica e Elétrica">
+<meta charset="UTF-8">
+<title>Eletricista e Encanador 24h em São Paulo | AE Serviços</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        :root {
-            --azul-escuro: #0a192f;
-            --azul-claro: #00a8e8;
-            --prata: #e6e6e6;
-            --verde-zap: #25d366;
-        }
+<meta name="description" content="Eletricista e Encanador 24 horas em São Paulo. Instalações elétricas, troca de disjuntores, vazamentos, desentupimentos e manutenção hidráulica. Atendimento rápido em toda São Paulo.">
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f0f2f5;
-        }
+<meta name="keywords" content="eletricista são paulo, encanador são paulo, eletricista 24 horas, vazamento hidráulico, troca de disjuntor, manutenção elétrica, desentupimento">
 
-        header {
-            background: var(--azul-escuro);
-            color: var(--prata);
-            text-align: center;
-            padding: 30px 20px;
-            border-bottom: 3px solid var(--azul-claro);
-        }
+<meta name="author" content="AE Serviços Hidráulica e Elétrica">
 
-        header img {
-            width: 150px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
+<meta property="og:title" content="AE Serviços Hidráulica e Elétrica">
+<meta property="og:description" content="Eletricista e Encanador 24 horas em São Paulo. Atendimento rápido e profissional.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://robertodefreitas1992-wq.github.io/AE-servicos/">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "AE Serviços Hidráulica e Elétrica",
+ "image": "https://robertodefreitas1992-wq.github.io/AE-servicos/logo.png",
+ "url": "https://robertodefreitas1992-wq.github.io/AE-servicos/",
+ "telephone": "+5511984688870",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "São Paulo",
+   "addressRegion": "SP",
+   "addressCountry": "BR"
+ },
+ "areaServed": "São Paulo",
+ "serviceType": [
+   "Eletricista",
+   "Serviços elétricos",
+   "Serviços hidráulicos",
+   "Encanador"
+ ],
+ "openingHours": "Mo-Su 00:00-23:59"
+}
+</script>
 
-        .hero {
-            background: #112240;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
+<style>
 
-        .btn {
-            display: inline-block;
-            background: var(--verde-zap);
-            color: white;
-            padding: 15px 25px;
-            margin: 10px 5px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+body{
+margin:0;
+font-family:Arial;
+background:#f4f4f4;
+}
 
-        .btn:hover {
-            background: var(--azul-claro);
-            transform: scale(1.05);
-        }
+header{
+background:#0d1b2a;
+color:white;
+text-align:center;
+padding:20px;
+}
 
-        .container {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+header img{
+width:120px;
+border-radius:50%;
+}
 
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+.hero{
+background:#1b263b;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
 
-        .card h2 {
-            color: var(--azul-escuro);
-            border-bottom: 2px solid var(--azul-claro);
-            display: inline-block;
-            padding-bottom: 5px;
-        }
+.btn{
+display:inline-block;
+background:#25d366;
+color:white;
+padding:15px 25px;
+margin-top:15px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
 
-        .galeria {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
+.container{
+padding:20px;
+max-width:1000px;
+margin:auto;
+}
 
-        .galeria img {
-            width: 100%;
-            max-width: 250px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+.card{
+background:white;
+padding:20px;
+margin:15px 0;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
 
-        .galeria img:hover { transform: scale(1.05); }
+.galeria{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
 
-        footer {
-            background: var(--azul-escuro);
-            color: #999;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
 
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--verde-zap);
-            color: white;
-            font-size: 22px;
-            padding: 15px 18px;
-            border-radius: 50%;
-            text-decoration: none;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
-            z-index: 1000;
-        }
+footer{
+background:#0d1b2a;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
 
-        #lightbox {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.9);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            z-index: 2000;
-        }
+/* botão flutuante whatsapp */
 
-        #lightbox img { max-width: 90%; max-height: 90%; border-radius: 10px; }
-    </style>
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+font-size:22px;
+padding:15px 18px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+/* efeito clicar na foto */
+
+.galeria img{
+width:100%;
+max-width:250px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
+
+/* imagem ampliada */
+
+#lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+#lightbox img{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <img src="logo.png" alt="Logo AE Serviços">
-    <h1>Eletricista 24h em São Paulo – Perus, Zona Norte e Região</h1>
-    <p>AE Serviços Hidráulica e Elétrica</p>
+<img src="logo.png">
+<h1>Eletricista 24h em São Paulo – Perus, Zona Norte e Região</h1>
+<p>AE Serviços Hidráulica e Elétrica</p>
+
 </header>
 
 <section class="hero">
-    <h2>Atendimento 24 Horas em São Paulo</h2>
-    <p>Eletricista e encanador 24h com atendimento rápido. Orçamento sem compromisso.</p>
-    <a class="btn" href="https://wa.me/5511984688870?text=Olá, preciso de um eletricista urgente" target="_blank">💬 WhatsApp Elétrica</a>
-    <a class="btn" href="https://wa.me/5511932592456?text=Olá, preciso de um encanador urgente" target="_blank">💬 WhatsApp Hidráulica</a>
+
+<h2>Atendimento 24 Horas em São Paulo</h2>
+
+<p>Eletricista e encanador 24h com atendimento rápido em toda São Paulo. Orçamento sem compromisso.</p>
+
+<a class="btn" href="https://wa.me/5511984688870?text=Olá,%20preciso%20de%20um%20eletricista%20urgente" target="_blank">
+💬 WhatsApp Eletricista (Adriano)
+</a>
+
+<br><br>
+
+<a class="btn" href="tel:+5511984688870">
+📞 Ligar para Eletricista
+</a>
+
+<br><br>
+
+<a class="btn" href="https://wa.me/5511932592456" target="_blank">
+💬 WhatsApp Hidráulica (Everton)
+</a>
+
+<br><br>
+
+<a class="btn" href="tel:+5511932592456">
+📞 Ligar para Hidráulica
+</a>
+
+
 </section>
-
-<div class="container">
-    <div class="card" style="background:#ffecec; border:2px solid red; text-align:center;">
-        <h2 style="color:red; border:none;">⚡ Emergência 24h</h2>
-        <p><b>Curto-circuito? Queda de energia? Vazamento?</b></p>
-        <a class="btn" style="background:red;" href="tel:+5511984688870">🚨 LIGAR AGORA</a>
-    </div>
-
-    <div class="card">
-        <h2>👨‍🔧 Profissionais</h2>
-        <p><b>Eletricista:</b> Adriano Roberto</p>
-        <p><b>Hidráulica:</b> Everton</p>
-    </div>
-
-    <div class="card">
-        <h2>🔌 Serviços Realizados</h2>
-        <div class="galeria">
-            <img src="IMG-20260317-WA0029(1).jpg" alt="Serviço" onclick="abrirImagem(this.src)">
-            <img src="IMG-20260319-WA0002.jpg" alt="Serviço" onclick="abrirImagem(this.src)">
-            <img src="IMG-20260319-WA0003.jpg" alt="Serviço" onclick="abrirImagem(this.src)">
-            <img src="hidraulica1.jpg" alt="Serviço" onclick="abrirImagem(this.src)">
-        </div>
-    </div>
+ 
+ <div class="container">
+  
+<div class="card" style="background:#ffecec; border:2px solid red; text-align:center;">
+<h2>⚡ Atendimento de Emergência 24h</h2>
+<p>Curto-circuito? Queda de energia? Vazamento?</p>
+<p><b>Chegamos rápido em qualquer região de São Paulo!</b></p>
+<a class="btn" href="https://wa.me/5511984688870?text=Preciso%20de%20um%20eletricista%20urgente" target="_blank">
+🚨 CHAMAR AGORA NO WHATSAPP
+</a>
 </div>
 
+<div class="card">
+<h2>Eletricista e Encanador em São Paulo</h2>
+<p>A AE Serviços Hidráulica e Elétrica oferece atendimento 24 horas em toda São Paulo. Trabalhamos com instalações elétricas, troca de disjuntores, manutenção, vazamentos, desentupimentos e serviços hidráulicos em geral.</p>
+</div>
+<div class="card">
+ 
+<h2>👨‍🔧 Profissionais</h2>
+
+<p><b>Eletricista:</b> Adriano Roberto</p>
+<p><b>Hidráulica:</b> Everton</p>
+
+</div>
+
+<div class="card">
+
+<h2>🔌 Serviços Elétricos</h2>
+
+<ul>
+<li>Instalações elétricas</li>
+<li>Troca de disjuntores</li>
+<li>Iluminação</li>
+<li>Manutenção e emergências</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🚿 Serviços Hidráulicos</h2>
+
+<ul>
+<li>Vazamentos</li>
+<li>Troca de torneiras</li>
+<li>Desentupimento</li>
+<li>Manutenção geral</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📍 Atendimento</h2>
+
+<p>Toda São Paulo (Zona Leste, Zona Oeste, Zona Norte, Zona Sul e Centro)</p>
+<p>Atendemos bairros como Itaquera, Tatuapé, Mooca, Penha, Perus, Santo André e regiões próximas</p>
+<p><b>24 horas por dia</b></p>
+
+</div>
+
+
+<div class="card">
+<h2>📍 Regiões atendidas</h2>
+<p>Zona Leste: Itaquera, Guaianases, São Mateus</p>
+<p>Zona Norte: Perus, Santana, Tucuruvi</p>
+<p>Zona Sul: Santo Amaro, Jabaquara</p>
+<p>Zona Oeste: Lapa, Pinheiros</p>
+</div>
+
+
+
+<div class="card">
+<h2>✔ Por que escolher a AE Serviços?</h2>
+
+<ul>
+<li>Atendimento 24 horas</li>
+<li>Chegada rápida</li>
+<li>Preço justo</li>
+<li>Profissionais experientes</li>
+<li>Atendimento em toda São Paulo</li>
+</ul>
+ </div>
+
+
+<div class="card">
+<h2>📸 Fotos de Serviços Realizados</h2>
+
+<div class="galeria">
+
+<img src="IMG-20260317-WA0029(1).jpg" alt="Instalação elétrica residencial em São Paulo" onclick="abrirImagem(this.src)">
+<img src="IMG-20260319-WA0002.jpg" alt="Troca de disjuntor residencial" onclick="abrirImagem(this.src)">
+<img src="IMG-20260319-WA0003.jpg" alt="Quadro de disjuntores instalado" onclick="abrirImagem(this.src)">
+<img src="IMG-20260319-WA0004.jpg" alt="Serviço elétrico profissional" onclick="abrirImagem(this.src)">
+<img src="IMG-20260319-WA0005.jpg" alt="Instalação de iluminação elétrica" onclick="abrirImagem(this.src)">
+<img src="IMG-20260319-WA0006.jpg" alt="Manutenção elétrica residencial" onclick="abrirImagem(this.src)">
+
+<img src="hidraulica1.jpg" alt="Reparo de vazamento hidráulico" onclick="abrirImagem(this.src)">
+<img src="hidraulica2.jpg" alt="Troca de torneira hidráulica" onclick="abrirImagem(this.src)">
+<img src="hidraulica3.jpg" alt="Serviço hidráulico residencial" onclick="abrirImagem(this.src)">
+<img src="hidraulica4.jpg" alt="Manutenção hidráulica em casa" onclick="abrirImagem(this.src)">
+<img src="hidraulica5.jpg" alt="Conserto de encanamento" onclick="abrirImagem(this.src)">
+<img src="hidraulica6.jpg" alt="Instalação hidráulica profissional" onclick="abrirImagem(this.src)">
+
+</div>
+</div>
+<div class="card">
+
+<h2>👥 Visitantes do Site</h2>
+
+<p style="font-size:22px">
+<span id="contador">0</span> pessoas já visitaram nosso site
+</p>
+
+</div>
+<div class="card">
+<h2>⭐ Avaliações de Clientes</h2>
+
+<p>⭐⭐⭐⭐⭐</p>
+<p>"Troca de disjuntor feita no mesmo dia, serviço rápido e profissional."</p>
+<p><b>Cliente - Perus</b></p>
+
+<br>
+
+<p>⭐⭐⭐⭐⭐</p>
+<p>"Resolveu vazamento aqui em casa em menos de 1 hora."</p>
+<p><b>Cliente - Itaquera</b></p>
+
+<br>
+
+<p>⭐⭐⭐⭐⭐</p>
+<p>"Atendimento rápido e preço justo. Recomendo!"</p>
+<p><b>Cliente - Zona Norte</b></p>
+
+</div>
+</div>  
 <footer>
-    <p>AE Serviços © 2026 - Todos os direitos reservados</p>
+
+<p>AE Serviços © 2026 - Todos os direitos reservados</p>
+
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/5511984688870" target="_blank">📞</a>
-
+<a class="whatsapp" href="https://wa.me/5511984688870?text=Olá,%20preciso%20de%20um%20eletricista%20urgente" target="_blank">
+📞
+</a>
 <div id="lightbox" onclick="fecharImagem()">
-    <img id="imagemGrande">
+<img id="imagemGrande">
 </div>
 
 <script>
-    function abrirImagem(src){
-        document.getElementById("lightbox").style.display="flex";
-        document.getElementById("imagemGrande").src=src;
-    }
-    function fecharImagem(){
-        document.getElementById("lightbox").style.display="none";
-    }
-</script>
+function abrirImagem(src){
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("imagemGrande").src=src;
+}
 
+function fecharImagem(){
+document.getElementById("lightbox").style.display="none";
+}
+</script> 
+
+<script>
+fetch('https://api.countapi.xyz/hit/ae-servicos/visitas')
+.then(response => response.json())
+.then(data => {
+document.getElementById("contador").innerText = data.value;
+});
+</script>  
 </body>
 </html>
