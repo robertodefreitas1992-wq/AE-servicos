@@ -54,6 +54,9 @@ transform:scale(1.05);
 .galeria img:hover{transform:scale(1.05);}
 #lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);display:none;justify-content:center;align-items:center;z-index:999;}
 #lightbox img{max-width:90%;max-height:90%;border-radius:10px;}
+ .extra{
+display:none;
+} 
 </style>
 
 </head>
@@ -140,7 +143,7 @@ transform:scale(1.05);
 
 <div class="card">
 <h2>📸 Fotos de Serviços Realizados</h2>
-<div class="galeria">
+<div class="galeria" id="galeria">
 
 <img src="servico1.jpg" alt="Serviço elétrico" loading="lazy" onclick="abrirImagem(this.src)">
 <img src="servico2.jpg" alt="Serviço hidráulico" loading="lazy" onclick="abrirImagem(this.src)">
@@ -162,9 +165,13 @@ transform:scale(1.05);
 <img src="servico18.jpg" alt="Manutenção geral" loading="lazy" onclick="abrirImagem(this.src)">
 <img src="servico19.jpg" alt="Serviço técnico" loading="lazy" onclick="abrirImagem(this.src)">
 <img src="servico20.jpg" alt="Atendimento 24 horas" loading="lazy" onclick="abrirImagem(this.src)">
-
+<img src="servico13.jpg" class="extra" loading="lazy" onclick="abrirImagem(this.src)">
+<img src="servico14.jpg" class="extra" loading="lazy" onclick="abrirImagem(this.src)">
+<img src="servico15.jpg" class="extra" loading="lazy" onclick="abrirImagem(this.src)">
 </div>
-
+<div style="text-align:center; margin-top:15px;">
+<button onclick="mostrarMais()" class="btn">Ver mais fotos</button>
+</div>
 </div>
 
 <div class="card">
