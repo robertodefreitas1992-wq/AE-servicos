@@ -233,6 +233,11 @@ fetch('https://api.countapi.xyz/hit/ae-servicos/visitas')
 document.getElementById("contador").innerText = data.value;
 });
 </script>
-
+<script>
+function mostrarMais(){
+let fotos = document.querySelectorAll('.extra');
+fotos.forEach(f => f.style.display = 'block');
+}
+</script>
 </body>
 </html>
