@@ -2,22 +2,22 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Eletricista 24h em São Paulo (Perus, Pirituba, Lapa) | AE Serviços</title>
+
+<title>Eletricista 24h em São Paulo | Encanador Urgente | AE Serviços</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Eletricista e encanador 24 horas em São Paulo. Atendimento rápido em Perus, Pirituba, Lapa, Jaraguá e região.">
-<meta name="robots" content="index, follow">
-<meta name="author" content="AE Serviços">
+<meta name="description" content="Eletricista 24h em São Paulo. Manutenção elétrica residencial, vazamentos e encanador urgente. Atendimento rápido em Perus, Pirituba, Lapa, Jaraguá e região.">
 
-<!-- GEO SEO -->
-<meta name="geo.region" content="BR-SP">
-<meta name="geo.placename" content="São Paulo">
+<meta name="keywords" content="eletricista 24h São Paulo, eletricista urgente, manutenção elétrica residencial, encanador urgente, vazamento emergência, hidráulica 24 horas">
+
+<meta name="robots" content="index, follow">
 
 <link rel="icon" href="logo.png">
-<link rel="preload" as="image" href="logo.png">
 
 <!-- GOOGLE ANALYTICS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K9JREYVMP"></script>
+
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -25,21 +25,16 @@ gtag('js', new Date());
 gtag('config', 'G-0K9JREYVMP');
 </script>
 
-<!-- DADOS ESTRUTURADOS -->
+<!-- SEO ESTRUTURADO -->
 <script type="application/ld+json">
 {
 "@context": "https://schema.org",
 "@type": "LocalBusiness",
 "name": "AE Serviços Hidráulica e Elétrica",
 "telephone": "+5511984688870",
-"address": {
-"@type": "PostalAddress",
-"addressLocality": "São Paulo",
-"addressRegion": "SP",
-"addressCountry": "BR"
-},
-"areaServed": ["Perus","Pirituba","Lapa","Jaraguá"],
-"serviceType": ["Eletricista","Encanador"]
+"areaServed": "São Paulo",
+"openingHours": "Mo-Su 00:00-23:59",
+"serviceType": ["Eletricista 24h", "Encanador urgente", "Vazamentos", "Manutenção elétrica"]
 }
 </script>
 
@@ -49,10 +44,29 @@ header{background:#0d1b2a;color:white;text-align:center;padding:20px;}
 header img{width:120px;border-radius:50%;}
 .hero{background:#1b263b;color:white;text-align:center;padding:40px 20px;}
 .btn{display:inline-block;background:#25d366;color:white;padding:15px 25px;margin-top:15px;text-decoration:none;border-radius:6px;font-weight:bold;}
+.btn-call{background:#0d6efd;}
 .container{padding:20px;max-width:1000px;margin:auto;}
 .card{background:white;padding:20px;margin:15px 0;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.1);}
 footer{background:#0d1b2a;color:white;text-align:center;padding:15px;margin-top:20px;}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25d366;color:white;font-size:22px;padding:15px 18px;border-radius:50%;text-decoration:none;box-shadow:0 0 10px rgba(0,0,0,0.3);}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+font-size:22px;
+padding:20px;
+border-radius:50%;
+box-shadow:0 0 15px rgba(0,0,0,0.4);
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
+}
 
 .galeria{
 display:grid;
@@ -66,15 +80,24 @@ height:180px;
 object-fit:cover;
 border-radius:10px;
 cursor:pointer;
-transition:0.3s;
 }
 
-.galeria img:hover{transform:scale(1.05);}
+#lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+justify-content:center;
+align-items:center;
+}
 
-#lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);display:none;justify-content:center;align-items:center;z-index:999;}
-#lightbox img{max-width:90%;max-height:90%;border-radius:10px;}
-
-.extra{display:none;}
+#lightbox img{
+max-width:90%;
+max-height:90%;
+}
 </style>
 
 </head>
@@ -82,85 +105,86 @@ transition:0.3s;
 <body>
 
 <header>
-<img src="logo.png" alt="AE Serviços Hidráulica e Elétrica em São Paulo">
-<h1>Eletricista e Encanador 24h em São Paulo – Atendimento Rápido</h1>
-<p>AE Serviços Hidráulica e Elétrica</p>
+<img src="logo.png">
+<h1>Eletricista e Encanador 24h em São Paulo</h1>
+<p>Mais de 150 atendimentos realizados com rapidez e confiança</p>
 </header>
 
 <section class="hero">
-<h2>⚡ Eletricista 24h em São Paulo</h2>
-<p>Chegamos rápido na sua região. Atendimento profissional e seguro.</p>
 
-<a class="btn" href="https://wa.me/5511984688870?text=Olá,%20vi%20seu%20site%20e%20preciso%20de%20um%20eletricista%20urgente" target="_blank"
-onclick="gtag('event','click_whatsapp')">💬 WhatsApp Eletricista</a>
+<h2>⚡ Atendimento 24h em Perus, Pirituba, Lapa e Região</h2>
+<p>Serviços elétricos e hidráulicos com chegada rápida e segurança</p>
+
+<a class="btn" href="https://wa.me/5511984688870">💬 WhatsApp Eletricista</a>
+<br><br>
+<a class="btn btn-call" href="tel:+5511984688870">📞 Ligar Agora</a>
 
 <br><br>
 
-<a class="btn" href="tel:+5511984688870" onclick="gtag('event','click_ligacao')">
-📞 Ligar Agora
-</a>
+<a class="btn" href="https://wa.me/5511932592456">💬 WhatsApp Hidráulica</a>
+<br><br>
+<a class="btn btn-call" href="tel:+5511932592456">📞 Ligar Hidráulica</a>
+
 </section>
 
 <div class="container">
 
-<div class="card" style="background:#ffecec; border:2px solid red; text-align:center;">
-<h2>⚡ Atendimento de Emergência 24h</h2>
-<p>Curto-circuito? Vazamento? Chegamos rápido!</p>
-<a class="btn" href="https://wa.me/5511984688870?text=Urgente" target="_blank">🚨 CHAMAR AGORA</a>
+<div class="card" style="text-align:center;">
+<h2>🚀 Atendimento rápido em toda região</h2>
+<p>Perus, Pirituba, Lapa, Freguesia do Ó, Jaraguá, Taipas, Casa Verde, Limão, Brasilândia e Osasco.</p>
 </div>
 
 <div class="card">
-<h2>💡 Por que escolher a AE Serviços?</h2>
-<ul>
-<li>✔ Atendimento rápido</li>
-<li>✔ Preço justo</li>
-<li>✔ Serviço garantido</li>
-<li>✔ Profissionais experientes</li>
-</ul>
+<h2>🔧 Serviços realizados diariamente</h2>
+<p>Manutenção elétrica residencial, troca de disjuntores, instalação elétrica, vazamentos, desentupimentos e reparos hidráulicos urgentes.</p>
 </div>
 
 <div class="card">
-<h2>📍 Região de Atendimento</h2>
-<p>Perus, Pirituba, Lapa, Jaraguá, Freguesia do Ó e região</p>
+<h2>⭐ Avaliações de Clientes</h2>
+
+<p><b>★★★★★</b><br>"Chegou rápido aqui em Pirituba e resolveu o problema na hora. Excelente serviço."</p>
+
+<p><b>★★★★★</b><br>"Profissional de confiança, fez toda parte elétrica da minha casa na Lapa."</p>
+
+<p><b>★★★★★</b><br>"Tive vazamento urgente em Perus e foi resolvido no mesmo dia."</p>
+
+</div>
+
+<div class="card" style="text-align:center;">
+<h2>👷 Mais de 150 atendimentos realizados</h2>
+<p>Clientes atendidos em toda São Paulo com rapidez e qualidade.</p>
 </div>
 
 <div class="card">
-<h2>👀 Visitas no site</h2>
-<p><b id="contador">0</b> pessoas já acessaram</p>
+<h2>📸 Resultados reais dos serviços</h2>
+<p>Veja alguns dos atendimentos realizados recentemente:</p>
 </div>
 
 <div class="card">
-<h2>📸 Serviços Realizados</h2>
 <div class="galeria">
 
-<!-- TODAS SUAS FOTOS MANTIDAS -->
-<img src="servico1.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico2.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico3.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico4.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico5.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico6.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico7.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico8.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico9.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico10.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico11.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico12.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico13.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico14.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico15.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico16.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico17.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico18.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico19.jpg" loading="lazy" onclick="abrirImagem(this.src)">
-<img src="servico20.jpg" loading="lazy" onclick="abrirImagem(this.src)">
+<img src="servico1.jpg" onclick="abrirImagem(this.src)">
+<img src="servico2.jpg" onclick="abrirImagem(this.src)">
+<img src="servico3.jpg" onclick="abrirImagem(this.src)">
+<img src="servico4.jpg" onclick="abrirImagem(this.src)">
+<img src="servico5.jpg" onclick="abrirImagem(this.src)">
+<img src="servico6.jpg" onclick="abrirImagem(this.src)">
+<img src="servico7.jpg" onclick="abrirImagem(this.src)">
+<img src="servico8.jpg" onclick="abrirImagem(this.src)">
+<img src="servico9.jpg" onclick="abrirImagem(this.src)">
+<img src="servico10.jpg" onclick="abrirImagem(this.src)">
+<img src="servico11.jpg" onclick="abrirImagem(this.src)">
+<img src="servico12.jpg" onclick="abrirImagem(this.src)">
+<img src="servico13.jpg" onclick="abrirImagem(this.src)">
+<img src="servico14.jpg" onclick="abrirImagem(this.src)">
+<img src="servico15.jpg" onclick="abrirImagem(this.src)">
+<img src="servico16.jpg" onclick="abrirImagem(this.src)">
+<img src="servico17.jpg" onclick="abrirImagem(this.src)">
+<img src="servico18.jpg" onclick="abrirImagem(this.src)">
+<img src="servico19.jpg" onclick="abrirImagem(this.src)">
+<img src="servico20.jpg" onclick="abrirImagem(this.src)">
 
 </div>
-</div>
-
-<div class="card">
-<h2>🛡️ Compromisso AE Serviços</h2>
-<p>Atendimento profissional com segurança, qualidade e garantia.</p>
 </div>
 
 </div>
@@ -169,9 +193,9 @@ onclick="gtag('event','click_whatsapp')">💬 WhatsApp Eletricista</a>
 <p>AE Serviços © 2026</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/5511984688870" target="_blank">💬</a>
+<a class="whatsapp" href="https://wa.me/5511984688870">💬</a>
 
-<div id="lightbox" onclick="fecharImagem()">
+<div id="lightbox" onclick="this.style.display='none'">
 <img id="imagemGrande">
 </div>
 
@@ -180,17 +204,6 @@ function abrirImagem(src){
 document.getElementById("lightbox").style.display="flex";
 document.getElementById("imagemGrande").src=src;
 }
-function fecharImagem(){
-document.getElementById("lightbox").style.display="none";
-}
-</script>
-
-<script>
-fetch('https://api.countapi.xyz/hit/ae-servicos/visitas')
-.then(res => res.json())
-.then(data => {
-document.getElementById("contador").innerText = data.value;
-});
 </script>
 
 </body>
